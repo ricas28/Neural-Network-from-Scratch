@@ -4,6 +4,10 @@ from sklearn.datasets import fetch_openml
 def load_mnist_dataset():
     """
     Used for loading the mnist dataset.
+    ---
+    Returns:
+        - Two tuples with the training examples and their labels
+          and the same for testing examples.
     """
     mnist = fetch_openml('mnist_784', version=1)
     X = mnist.data / 255.0
@@ -15,5 +19,6 @@ def load_mnist_dataset():
     
     return (train_x.to_numpy(), train_y.to_numpy()), (test_x.to_numpy(), test_y.to_numpy())
 
-(train_x, train_y), (test_x, test_y) = load_mnist_dataset()
+if __name__ == "__main__":
+    (train_x, train_y), (test_x, test_y) = load_mnist_dataset()
 
