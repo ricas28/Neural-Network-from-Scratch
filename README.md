@@ -113,9 +113,9 @@ model = MLPModel.load_model("model.pkl")
 
 The network is a fully connected feedforward neural network with the following internal components:
 
-    - <code>self.weights:<\code> list of weight matrices
+    - `self.weights:` list of weight matrices
 
-    - <code>self.biases<\code>: list of bias vectors
+    - `self.biases`: list of bias vectors
 
 Training involves:
 
@@ -154,8 +154,9 @@ model.test_accuracy(test_x, test_y)
 Python 3.10+
 
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
 ## 👨‍💻 Author
 
