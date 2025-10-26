@@ -1,6 +1,8 @@
 import numpy as np
 from sklearn.datasets import fetch_openml
 
+from train import Model
+
 def load_mnist_dataset():
     """
     Used for loading the mnist dataset.
@@ -19,6 +21,11 @@ def load_mnist_dataset():
     
     return (train_x.to_numpy(), train_y.to_numpy()), (test_x.to_numpy(), test_y.to_numpy())
 
+
 if __name__ == "__main__":
     (train_x, train_y), (test_x, test_y) = load_mnist_dataset()
+    model = Model((784, 12, 10), 'ReLu', 0.5)
+    model.train_model(train_x, train_y, 64)
+    
+
 
