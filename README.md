@@ -95,7 +95,7 @@ Softmax().activation(Z)
 
 Applies the softmax function row-wise to transform outputs into probability distributions — typically used for multi-class classification.
 
-💾 Model Persistence
+## 💾 Model Persistence
 
 Weights, biases, and hyperparameters are saved using Python’s built-in pickle module.
 
