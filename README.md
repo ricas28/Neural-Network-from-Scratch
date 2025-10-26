@@ -1,6 +1,8 @@
 # 🧠 Neural Network From Scratch (NumPy)
 
 This project implements a **fully connected neural network (MLP)** from scratch using **NumPy** only.  
+The network is **dataset-agnostic** and can be applied to any numerical input data, but the main example in this repository demonstrates training and testing on the **MNIST dataset** for handwritten digit classification.
+
 It includes **activation functions**, **forward and backward propagation**, **mini-batch training**, **accuracy evaluation**, and **model persistence** using `pickle`.
 
 ---
