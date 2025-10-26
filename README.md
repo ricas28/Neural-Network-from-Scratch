@@ -52,7 +52,7 @@ Neural-Network-from-Scratch/
 
 ## ⚙️ Example Usage 
 ```python
-from model import MLPModel
+from train import MLPModel
 
 # Create a new model
 model = MLPModel(
@@ -115,9 +115,9 @@ model = MLPModel.load_model("model.pkl")
 
 The network is a fully connected feedforward neural network with the following internal components:
 
-    - `self.weights:` list of weight matrices
+  - `self.weights:` list of weight matrices
 
-    - `self.biases`: list of bias vectors
+  - `self.biases`: list of bias vectors
 
 Training involves:
 
